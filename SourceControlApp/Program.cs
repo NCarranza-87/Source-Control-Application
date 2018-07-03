@@ -24,12 +24,18 @@ namespace SourceControlApp
             ******************************************************************************************************/
 
             string name = "";
+            int age = 0;
+
             Console.Write("Please enter your name: ");
             name = Convert.ToString(Console.ReadLine());
 
+            Console.Write("Please enter your age: ");
+            age = Convert.ToInt32(Console.ReadLine());
+
 
             Console.WriteLine();
-            Console.Write("My name is " + name);
+            Console.WriteLine("My name is " + name + ".");
+            Console.Write("I am " + age + " years old.");
             Console.ReadKey();
         }
     }
