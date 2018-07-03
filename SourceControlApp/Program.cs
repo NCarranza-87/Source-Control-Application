@@ -25,6 +25,7 @@ namespace SourceControlApp
 
             string name = "";
             int age = 0;
+            string profession = "";
 
             Console.Write("Please enter your name: ");
             name = Convert.ToString(Console.ReadLine());
@@ -32,10 +33,13 @@ namespace SourceControlApp
             Console.Write("Please enter your age: ");
             age = Convert.ToInt32(Console.ReadLine());
 
+            Console.Write("Please enter your profession: ");
+            profession = Convert.ToString(Console.ReadLine());
 
             Console.WriteLine();
             Console.WriteLine("My name is " + name + ".");
             Console.Write("I am " + age + " years old.");
+            Console.Write("My profession is " + profession);
             Console.ReadKey();
         }
     }
