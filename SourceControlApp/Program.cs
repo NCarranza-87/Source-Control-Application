@@ -38,9 +38,39 @@ namespace SourceControlApp
 
             Console.WriteLine();
             Console.WriteLine("My name is " + name + ".");
-            Console.Write("I am " + age + " years old.");
-            Console.Write("My profession is " + profession);
+            Console.WriteLine("I am " + age + " years old.");
+            Console.WriteLine("My profession is " + profession);
+            pickYourFavoriteTypeOfVehicle();
             Console.ReadKey();
+        }
+
+        public static void pickYourFavoriteTypeOfVehicle()
+        {
+            // code for the response from the user of
+            // what is there favorite type of vehical
+            string favoriteVehicleType = "";
+
+            Console.Write("What is your favorite type of vehical? ");
+            favoriteVehicleType = Convert.ToString(Console.ReadLine());
+            switch (favoriteVehicleType)
+            {
+                case "1":
+                    favoriteVehicleType = "Car";
+                    break;
+                case "2":
+                    favoriteVehicleType = "Van";
+                    break;
+                case "3":
+                    favoriteVehicleType = "Truck";
+                    break;
+                case "4":
+                    favoriteVehicleType = "SUV";
+                    break;
+                default:
+                    Console.Write("Your like riding a bicycle....");
+                    break;
+            }
+            Console.Write("My favorite type of vehical is a " + favoriteVehicleType);
         }
     }
 }
