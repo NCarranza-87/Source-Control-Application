@@ -41,6 +41,7 @@ namespace SourceControlApp
             Console.WriteLine("I am " + age + " years old.");
             Console.WriteLine("My profession is " + profession);
             pickYourFavoriteTypeOfVehicle();
+            Console.Write("Thank you, GoodBye " + name);
             Console.ReadKey();
         }
 
@@ -50,6 +51,7 @@ namespace SourceControlApp
             // what is there favorite type of vehical
             string favoriteVehicleType = "";
 
+            Console.WriteLine();
             Console.Write("What is your favorite type of vehical? ");
             favoriteVehicleType = Convert.ToString(Console.ReadLine());
             switch (favoriteVehicleType)
@@ -67,10 +69,12 @@ namespace SourceControlApp
                     favoriteVehicleType = "SUV";
                     break;
                 default:
-                    Console.Write("Your like riding a bicycle....");
+                    favoriteVehicleType = "bicycle";
                     break;
             }
-            Console.Write("My favorite type of vehical is a " + favoriteVehicleType);
+            Console.WriteLine("My favorite type of vehical is a " + favoriteVehicleType);
+            Console.WriteLine();
+            
         }
     }
 }
